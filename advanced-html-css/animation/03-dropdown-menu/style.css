@@ -19,6 +19,16 @@
   background-color: rgb(99, 97, 97);
 
   display: none;
+  transform-origin: 50% 0%;
+}
+
+@keyframes expand {
+  0% {transform: scaleY(0);}
+  70% {transform: scaleY(1.2);}
+  100% {transform: scaleY(1);}
+}
+.dropdown-menu.visible {
+  animation: expand 300ms ease;
 }
 
 ul.dropdown-menu li:hover {

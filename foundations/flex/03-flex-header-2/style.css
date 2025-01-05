@@ -4,14 +4,18 @@ you'll learn about it later. */
 
 body {
   margin: 0;
+  padding: 0;
   background: #eee;
-  font-family: Besley, serif;
+  font-family: 'Besley', serif;
 }
 
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
 }
 
 .profile-image {
@@ -45,4 +49,23 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+.header,
+.left-links,
+.right-links,
+.links {
+  display: flex;
+}
+
+.left-links {
+  align-items: center;
+}
+
+.links {
+  gap: 12px;
+}
+
+.right-links {
+  gap: 12px;
 }

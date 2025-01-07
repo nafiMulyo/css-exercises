@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -49,4 +51,15 @@ a {
 .header .left-links,
 .header .right-links {
   column-gap: 15px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.content .input {
+  margin-bottom: 15px;
 }

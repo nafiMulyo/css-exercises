@@ -3,6 +3,7 @@
 body {
   height: 100vh;
   margin: 0;
+  padding: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
 }
@@ -23,4 +24,29 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+.header,
+.header .left-links,
+.header .right-links {
+  display: flex;
+}
+
+.header {
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.header .left-links,
+.header .right-links {
+  column-gap: 15px;
 }
